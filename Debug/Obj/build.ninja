@@ -20,9 +20,9 @@ rule browsedata
 
 
 #Build steps
-build simple_io_main_sp.pbi : index simple_io_main_sp.xcl
+build simple_io_main_sp_artur.pbi : index simple_io_main_sp_artur.xcl
 build system_TM4C1294_TW.pbi : index system_TM4C1294_TW.xcl
-build new_project.pbd : link simple_io_main_sp.pbi system_TM4C1294_TW.pbi
+build new_project.pbd : link simple_io_main_sp_artur.pbi system_TM4C1294_TW.pbi
 build new_project.pbw : browsedata new_project.pbd
 
 
