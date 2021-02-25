@@ -9,6 +9,13 @@
 #define __CONFIG_CLOCK	  (SYSCTL_XTAL_25MHZ | SYSCTL_OSC_MAIN | SYSCTL_USE_PLL | SYSCTL_CFG_VCO_480)
 #define __SYSTEM_CLOCK    (120000000UL)
 
+void loop(){
+  uint32_t i = 0;
+  while (i < 10000000) { // 1s low code 
+    i++;
+  }
+}
+
 void main(void){
   SysCtlClockFreqSet(__CONFIG_CLOCK, __SYSTEM_CLOCK); // Funcao para setar o clock usando PLL
   
@@ -21,8 +28,12 @@ void main(void){
 
   while(1){
     GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0, 0); // Apaga LED D4
-    SysCtlDelay(40000000); // Uma funcao em loop que executa em 3 ciclos => 8.000.000 = 1segundo/{[1/(24MHz)] * 3ciclos}
+    // SysCtlDelay(40000000); // Uma funcao em loop que executa em 3 ciclos => 8.000.000 = 1segundo/{[1/(24MHz)] * 3ciclos}
+    loop();
+    
     GPIOPinWrite(GPIO_PORTF_BASE, GPIO_PIN_0, GPIO_PIN_0); // Acende LED D4
-    SysCtlDelay(40000000); // Uma funcao em loop que executa em 3 ciclos => 40.000.000 = 1segundo/{[1/(120MHz)] * 3ciclos}
+    // SysCtlDelay(40000000); // Uma funcao em loop que executa em 3 ciclos => 40.000.000 = 1segundo/{[1/(120MHz)] * 3ciclos}
+    loop();
+  
   } // while
 } // main

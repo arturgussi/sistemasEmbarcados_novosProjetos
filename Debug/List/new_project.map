@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V8.50.9.278/W32 for ARM                  24/Feb/2021  21:25:47
+# IAR ELF Linker V8.50.9.278/W32 for ARM                  24/Feb/2021  21:35:04
 # Copyright 2007-2020 IAR Systems AB.
 #
 #    Output file  =
@@ -8,7 +8,7 @@
 #    Map file     =
 #        C:\Projetos\Hugo\EK-TM4C1294_IAR8\Projects\new_project\Debug\List\new_project.map
 #    Command line =
-#        -f C:\Users\tuca_\AppData\Local\Temp\EWA162.tmp
+#        -f C:\Users\tuca_\AppData\Local\Temp\EW210C.tmp
 #        (C:\Projetos\Hugo\EK-TM4C1294_IAR8\TivaWare_C_Series-2.1.4.178\driverlib\ewarm\Exe\driverlib.a
 #        C:\Projetos\Hugo\EK-TM4C1294_IAR8\Projects\new_project\Debug\Obj\simple_io_main_sp_artur.o
 #        C:\Projetos\Hugo\EK-TM4C1294_IAR8\Projects\new_project\Debug\Obj\startup_TM4C1294.o
@@ -70,20 +70,20 @@ define block HEAP with size = 64K, alignment = 8 { };
   .intvec   ro code          0x0   0x3c0  startup_TM4C1294.o [1]
                          - 0x3c0   0x3c0
 
-"P1":                              0x750
-  .text     ro code        0x3c0   0x4e8  sysctl.o [3]
-  .text     ro code        0x8a8   0x148  gpio.o [3]
-  .text     ro code        0x9f0    0x78  simple_io_main_sp_artur.o [1]
-  .text     ro code        0xa68    0x30  system_TM4C1294_TW.o [1]
-  .text     ro code        0xa98    0x1e  cmain.o [4]
-  .text     ro code        0xab6     0x4  low_level_init.o [2]
-  .text     ro code        0xaba     0x4  exit.o [2]
-  .text     ro code        0xabe     0x2  startup_TM4C1294.o [1]
-  .text     ro code        0xac0     0xa  cexit.o [4]
-  .text     ro code        0xacc    0x14  exit.o [5]
-  .text     ro code        0xae0    0x1c  cstartup_M.o [4]
-  .text     ro code        0xafc    0x14  startup_TM4C1294.o [1]
-                         - 0xb10   0x750
+"P1":                              0x748
+  .text     ro code        0x3c0   0x4e0  sysctl.o [3]
+  .text     ro code        0x8a0   0x148  gpio.o [3]
+  .text     ro code        0x9e8    0x7c  simple_io_main_sp_artur.o [1]
+  .text     ro code        0xa64    0x2c  system_TM4C1294_TW.o [1]
+  .text     ro code        0xa90    0x1e  cmain.o [4]
+  .text     ro code        0xaae     0x4  low_level_init.o [2]
+  .text     ro code        0xab2     0x4  exit.o [2]
+  .text     ro code        0xab6     0x2  startup_TM4C1294.o [1]
+  .text     ro code        0xab8     0xa  cexit.o [4]
+  .text     ro code        0xac4    0x14  exit.o [5]
+  .text     ro code        0xad8    0x1c  cstartup_M.o [4]
+  .text     ro code        0xaf4    0x14  startup_TM4C1294.o [1]
+                         - 0xb08   0x748
 
 "P2":                             0x8008
   .noinit   uninit   0x2000'0000     0x4  system_TM4C1294_TW.o [1]
@@ -95,7 +95,7 @@ Unused ranges:
 
          From           To      Size
          ----           --      ----
-        0xb10     0xf'ffff  0xf'f4f0
+        0xb08     0xf'ffff  0xf'f4f8
   0x2000'8008  0x2003'ffff  0x3'7ff8
 
 
@@ -111,9 +111,9 @@ command line/config:
     Total:
 
 C:\Projetos\Hugo\EK-TM4C1294_IAR8\Projects\new_project\Debug\Obj: [1]
-    simple_io_main_sp_artur.o      120
+    simple_io_main_sp_artur.o      124
     startup_TM4C1294.o             982
-    system_TM4C1294_TW.o            48        4
+    system_TM4C1294_TW.o            44        4
     -------------------------------------------
     Total:                       1'150        4
 
@@ -125,9 +125,9 @@ dl7M_tln.a: [2]
 
 driverlib.a: [3]
     gpio.o                         328
-    sysctl.o                     1'256
+    sysctl.o                     1'248
     -------------------------------------------
-    Total:                       1'584
+    Total:                       1'576
 
 rt7M_tl.a: [4]
     cexit.o                         10
@@ -144,7 +144,7 @@ shb_l.a: [5]
     Gaps                             2
     Linker created                       32'768
 -----------------------------------------------
-    Grand Total:                 2'832   32'772
+    Grand Total:                 2'824   32'772
 
 
 *******************************************************************************
@@ -153,41 +153,41 @@ shb_l.a: [5]
 
 Entry                       Address   Size  Type      Object
 -----                       -------   ----  ----      ------
-?main                         0xa99         Code  Gb  cmain.o [4]
+?main                         0xa91         Code  Gb  cmain.o [4]
 CSTACK$$Base            0x2000'0008          --   Gb  - Linker created -
 CSTACK$$Limit           0x2000'8008          --   Gb  - Linker created -
-GPIODirModeSet                0x8a9   0x28  Code  Gb  gpio.o [3]
-GPIOPadConfigSet              0x8d1   0xfe  Code  Gb  gpio.o [3]
-GPIOPinTypeGPIOOutput         0x9d5    0xa  Code  Gb  gpio.o [3]
-GPIOPinWrite                  0x9cf    0x6  Code  Gb  gpio.o [3]
+GPIODirModeSet                0x8a1   0x28  Code  Gb  gpio.o [3]
+GPIOPadConfigSet              0x8c9   0xfe  Code  Gb  gpio.o [3]
+GPIOPinTypeGPIOOutput         0x9cd    0xa  Code  Gb  gpio.o [3]
+GPIOPinWrite                  0x9c7    0x6  Code  Gb  gpio.o [3]
 Region$$Table$$Base             0x0          --   Gb  - Linker created -
 Region$$Table$$Limit            0x0          --   Gb  - Linker created -
-SysCtlClockFreqSet            0x425  0x204  Code  Gb  sysctl.o [3]
-SysCtlDelay                   0x41d    0x8  Code  Gb  sysctl.o [3]
+SysCtlClockFreqSet            0x41d  0x204  Code  Gb  sysctl.o [3]
 SysCtlPeripheralEnable        0x401    0x8  Code  Gb  sysctl.o [3]
 SysCtlPeripheralReady         0x3e1    0x8  Code  Gb  sysctl.o [3]
 SystemCoreClock         0x2000'0000    0x4  Data  Gb  system_TM4C1294_TW.o [1]
-SystemInit                    0xa69   0x1e  Code  Gb  system_TM4C1294_TW.o [1]
+SystemInit                    0xa65   0x1a  Code  Gb  system_TM4C1294_TW.o [1]
 _SysCtlMemTimingGet           0x3c1   0x20  Code  Lc  sysctl.o [3]
 __Vectors                       0x0          --   Gb  startup_TM4C1294.o [1]
 __Vectors_End                 0x3c0         Data  Gb  startup_TM4C1294.o [1]
 __Vectors_Size {Abs}          0x3c0          --   Gb  startup_TM4C1294.o [1]
-__cmain                       0xa99         Code  Gb  cmain.o [4]
-__exit                        0xacd   0x14  Code  Gb  exit.o [5]
-__iar_init_vfp                0xb05         Code  Wk  startup_TM4C1294.o [1]
-__iar_program_start           0xae1         Code  Gb  cstartup_M.o [4]
-__low_level_init              0xab7    0x4  Code  Gb  low_level_init.o [2]
+__cmain                       0xa91         Code  Gb  cmain.o [4]
+__exit                        0xac5   0x14  Code  Gb  exit.o [5]
+__iar_init_vfp                0xafd         Code  Wk  startup_TM4C1294.o [1]
+__iar_program_start           0xad9         Code  Gb  cstartup_M.o [4]
+__low_level_init              0xaaf    0x4  Code  Gb  low_level_init.o [2]
 __vector_table                  0x0         Data  Gb  startup_TM4C1294.o [1]
 __vector_table_0x1c            0x1c         Data  Gb  startup_TM4C1294.o [1]
-_call_main                    0xaa5         Code  Gb  cmain.o [4]
-_exit                         0xac1         Code  Gb  cexit.o [4]
-_main                         0xaaf         Code  Gb  cmain.o [4]
-exit                          0xabb    0x4  Code  Gb  exit.o [2]
-g_pppui32XTALtoVCO            0x6c0  0x1b0  Data  Lc  sysctl.o [3]
-g_pui32VCOFrequencies         0x8a0    0x8  Data  Lc  sysctl.o [3]
-g_pui32Xtals                  0x654   0x6c  Data  Lc  sysctl.o [3]
-g_sXTALtoMEMTIM               0x870   0x30  Data  Lc  sysctl.o [3]
-main                          0x9f1   0x78  Code  Gb  simple_io_main_sp_artur.o [1]
+_call_main                    0xa9d         Code  Gb  cmain.o [4]
+_exit                         0xab9         Code  Gb  cexit.o [4]
+_main                         0xaa7         Code  Gb  cmain.o [4]
+exit                          0xab3    0x4  Code  Gb  exit.o [2]
+g_pppui32XTALtoVCO            0x6b8  0x1b0  Data  Lc  sysctl.o [3]
+g_pui32VCOFrequencies         0x898    0x8  Data  Lc  sysctl.o [3]
+g_pui32Xtals                  0x64c   0x6c  Data  Lc  sysctl.o [3]
+g_sXTALtoMEMTIM               0x868   0x30  Data  Lc  sysctl.o [3]
+loop                          0x9e9    0xe  Code  Gb  simple_io_main_sp_artur.o [1]
+main                          0x9f7   0x5a  Code  Gb  simple_io_main_sp_artur.o [1]
 
 
 [1] = C:\Projetos\Hugo\EK-TM4C1294_IAR8\Projects\new_project\Debug\Obj
@@ -196,7 +196,7 @@ main                          0x9f1   0x78  Code  Gb  simple_io_main_sp_artur.o 
 [4] = rt7M_tl.a
 [5] = shb_l.a
 
-   2'832 bytes of readonly  code memory
+   2'824 bytes of readonly  code memory
   32'772 bytes of readwrite data memory
 
 Errors: none

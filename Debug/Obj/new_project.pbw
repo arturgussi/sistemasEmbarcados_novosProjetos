@@ -3368,7 +3368,7 @@
     "ID": "c:@F@GPIOIntStatus",
     "What": "Function",
     "defdec": "Dec",
-    "display": "uint32_t GPIOIntStatus(uint32_t, _Bool)",
+    "display": "uint32_t GPIOIntStatus(uint32_t, bool)",
     "location": {
       "column": "17",
       "line": "153",
@@ -11555,6 +11555,34 @@
     "scope": null
   },
   {
+    "ID": "c:@F@SysCtlPeripheralPresent",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "bool SysCtlPeripheralPresent(uint32_t)",
+    "location": {
+      "column": "13",
+      "line": "585",
+      "path": "C:\\Projetos\\Hugo\\EK-TM4C1294_IAR8\\TivaWare_C_Series-2.1.4.178\\driverlib\\sysctl.h"
+    },
+    "name": "SysCtlPeripheralPresent",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SysCtlPeripheralReady",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "bool SysCtlPeripheralReady(uint32_t)",
+    "location": {
+      "column": "13",
+      "line": "586",
+      "path": "C:\\Projetos\\Hugo\\EK-TM4C1294_IAR8\\TivaWare_C_Series-2.1.4.178\\driverlib\\sysctl.h"
+    },
+    "name": "SysCtlPeripheralReady",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:@F@SysCtlPeripheralReady",
     "What": "Function",
     "defdec": "Dec",
@@ -11709,6 +11737,20 @@
     "scope": null
   },
   {
+    "ID": "c:@F@SysCtlPeripheralClockGating",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void SysCtlPeripheralClockGating(bool)",
+    "location": {
+      "column": "13",
+      "line": "596",
+      "path": "C:\\Projetos\\Hugo\\EK-TM4C1294_IAR8\\TivaWare_C_Series-2.1.4.178\\driverlib\\sysctl.h"
+    },
+    "name": "SysCtlPeripheralClockGating",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:@F@SysCtlIntRegister",
     "What": "Function",
     "defdec": "Dec",
@@ -11775,6 +11817,20 @@
       "path": "C:\\Projetos\\Hugo\\EK-TM4C1294_IAR8\\TivaWare_C_Series-2.1.4.178\\driverlib\\sysctl.h"
     },
     "name": "SysCtlIntClear",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SysCtlIntStatus",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint32_t SysCtlIntStatus(bool)",
+    "location": {
+      "column": "17",
+      "line": "602",
+      "path": "C:\\Projetos\\Hugo\\EK-TM4C1294_IAR8\\TivaWare_C_Series-2.1.4.178\\driverlib\\sysctl.h"
+    },
+    "name": "SysCtlIntStatus",
     "origin": "user_include",
     "scope": null
   },
@@ -12101,6 +12157,34 @@
     "scope": null
   },
   {
+    "ID": "c:@F@SysCtlIOSCVerificationSet",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void SysCtlIOSCVerificationSet(bool)",
+    "location": {
+      "column": "13",
+      "line": "626",
+      "path": "C:\\Projetos\\Hugo\\EK-TM4C1294_IAR8\\TivaWare_C_Series-2.1.4.178\\driverlib\\sysctl.h"
+    },
+    "name": "SysCtlIOSCVerificationSet",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SysCtlMOSCVerificationSet",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void SysCtlMOSCVerificationSet(bool)",
+    "location": {
+      "column": "13",
+      "line": "627",
+      "path": "C:\\Projetos\\Hugo\\EK-TM4C1294_IAR8\\TivaWare_C_Series-2.1.4.178\\driverlib\\sysctl.h"
+    },
+    "name": "SysCtlMOSCVerificationSet",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:@F@SysCtlMOSCVerificationSet",
     "What": "Function",
     "defdec": "Dec",
@@ -12111,6 +12195,20 @@
       "path": "C:\\Projetos\\Hugo\\EK-TM4C1294_IAR8\\TivaWare_C_Series-2.1.4.178\\driverlib\\sysctl.h"
     },
     "name": "SysCtlMOSCVerificationSet",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SysCtlPLLVerificationSet",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void SysCtlPLLVerificationSet(bool)",
+    "location": {
+      "column": "13",
+      "line": "628",
+      "path": "C:\\Projetos\\Hugo\\EK-TM4C1294_IAR8\\TivaWare_C_Series-2.1.4.178\\driverlib\\sysctl.h"
+    },
+    "name": "SysCtlPLLVerificationSet",
     "origin": "user_include",
     "scope": null
   },
@@ -12353,6 +12451,20 @@
     "scope": null
   },
   {
+    "ID": "c:@F@SysCtlVCOGet",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "bool SysCtlVCOGet(uint32_t, uint32_t *)",
+    "location": {
+      "column": "13",
+      "line": "645",
+      "path": "C:\\Projetos\\Hugo\\EK-TM4C1294_IAR8\\TivaWare_C_Series-2.1.4.178\\driverlib\\sysctl.h"
+    },
+    "name": "SysCtlVCOGet",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:simple_io_main_sp_artur.c@216@macro@__CONFIG_CLOCK",
     "What": "MacroDef",
     "defdec": "Def",
@@ -12381,13 +12493,41 @@
     "scope": null
   },
   {
+    "ID": "c:@F@loop",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void loop(void)",
+    "location": {
+      "column": "6",
+      "line": "12",
+      "path": "C:\\Projetos\\Hugo\\EK-TM4C1294_IAR8\\Projects\\new_project\\src\\simple_io_main_sp_artur.c"
+    },
+    "name": "loop",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:simple_io_main_sp_artur.c@369@F@loop@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "12",
+      "line": "13",
+      "path": "C:\\Projetos\\Hugo\\EK-TM4C1294_IAR8\\Projects\\new_project\\src\\simple_io_main_sp_artur.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:@F@main",
     "What": "Function",
     "defdec": "Def",
     "display": "void main(void)",
     "location": {
       "column": "6",
-      "line": "12",
+      "line": "19",
       "path": "C:\\Projetos\\Hugo\\EK-TM4C1294_IAR8\\Projects\\new_project\\src\\simple_io_main_sp_artur.c"
     },
     "name": "main",
